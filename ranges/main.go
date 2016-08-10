@@ -26,8 +26,17 @@ func main() {
   fmt.Println("now lets square every element of the num array")
   fmt.Println(len(nums_squared))
   for index,element := range nums{
-      nums_squared[index] = element**2
+      nums_squared[index] = element*element
   }
   fmt.Println(nums_squared)
+
+  fmt.Println("lets do something on maps now")
+
+  string_map := map[string]int{"first":1,"second":2}
+  fmt.Println(len(string_map))
+
+  for key,value := range string_map {
+    fmt.Println(key,value)
+  }
 
 }
